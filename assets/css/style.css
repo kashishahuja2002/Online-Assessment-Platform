@@ -28,8 +28,8 @@ p {
 }
 
 .btn.btn-default {
-    background-color: var(--bgpurple);
-    color: black;
+    background-color: var(--lightpurple);
+    color: var(--white);
 }
 
 .btn-link {
@@ -200,7 +200,6 @@ legend.scheduler-border{
     }
 }
 
-
 .instructions .bgWhite
 {
     border-radius: 25px;
@@ -274,9 +273,9 @@ legend.scheduler-border{
 
 .page-item.active .page-link {
     z-index: 1;
-    color: var(--black);
-    background-color: var(--bgpurple);
-    border-color: var(--bgpurple);
+    color: var(--white);
+    background-color: var(--lightpurple);
+    border-color: var(--lightpurple);
 }
 
 .question
@@ -295,4 +294,49 @@ legend.scheduler-border{
 {
     margin: auto;
     margin-bottom: 10px;
+}
+
+/* Option label  */
+[class*=icheck-]>label 
+{
+    font-size: 18px;
+}
+
+.icheck-primary>input:first-child:checked+input[type=hidden]+label::before, .icheck-primary>input:first-child:checked+label::before {
+    background-color: var(--lightpurple);
+    border-color: var(--lightpurple);
+}
+
+/************* Result  *************/
+.result
+{
+    padding: 80px;
+}
+
+@media (max-width: 992px)
+{
+    .result {
+        padding: 80px 30px;
+    }
+}
+
+.result .bgWhite
+{
+    border-radius: 25px;
+}
+
+.score
+{
+    margin: auto;
+    padding: 45px 0;
+}
+
+.resultImage
+{
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-bottom: 50px;
 }
