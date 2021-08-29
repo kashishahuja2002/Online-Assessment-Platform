@@ -240,42 +240,20 @@ legend.scheduler-border{
 /************* Test  *************/
 .test
 {
-    padding: 80px;
+    padding: 120px;
 }
 
 @media (max-width: 992px)
 {
     .test {
-        padding: 80px 30px;
+        padding: 120px 30px;
     }
 }
 
 .test .bgWhite
 {
     border-radius: 25px;
-}
-
-.pagination
-{
-    margin: 50px auto;
-}
-
-.pagination li .page-link
-{
-    color: var(--black);
-}
-
-.pagination li .page-link:focus {
-    z-index: 2;
-    outline: 0;
-    box-shadow: none;
-}
-
-.page-item.active .page-link {
-    z-index: 1;
-    color: var(--white);
-    background-color: var(--lightpurple);
-    border-color: var(--lightpurple);
+    padding: 50px 0px;
 }
 
 .question
@@ -283,11 +261,6 @@ legend.scheduler-border{
     margin: auto;
     width: 80%;
     margin-bottom: 50px;
-}
-
-.buttons
-{
-    padding-bottom: 50px;
 }
 
 .buttons .btn
@@ -339,18 +312,4 @@ legend.scheduler-border{
     margin-right: auto;
     width: 40%;
     padding-bottom: 50px;
-}
-
-
-/*Error*/
-.error{
-    color: red;
-    position: absolute;
-    top: 50px;
-  }
-
-
-  label {
-    display: inline-block;
-    margin-bottom: 10px;
 }
