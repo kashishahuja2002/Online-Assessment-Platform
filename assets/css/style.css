@@ -240,13 +240,13 @@ legend.scheduler-border{
 /************* Test  *************/
 .test
 {
-    padding: 95px;
+    padding: 80px;
 }
 
 @media (max-width: 992px)
 {
     .test {
-        padding: 95px 30px;
+        padding: 80px 30px;
     }
 }
 
