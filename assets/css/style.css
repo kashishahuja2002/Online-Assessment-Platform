@@ -190,9 +190,16 @@ legend.scheduler-border{
 /************* Instructions  *************/
 .instructions
 {
-    padding: 50px;
-    padding-top: 120px;
+    padding: 65px;
 }
+
+@media (max-width: 768px)
+{
+    .instructions {
+        padding: 65px 30px;
+    }
+}
+
 
 .instructions .bgWhite
 {
@@ -205,6 +212,13 @@ legend.scheduler-border{
     width: 100%;
     padding: 60px;
     color: var(--black);
+}
+
+@media (max-width: 768px)
+{
+    .instructions .leftPanel{
+        padding: 60px 40px;
+    }
 }
 
 /* Rightt Panel  */
@@ -222,4 +236,63 @@ legend.scheduler-border{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+/************* Test  *************/
+.test
+{
+    padding: 95px;
+}
+
+@media (max-width: 992px)
+{
+    .test {
+        padding: 95px 30px;
+    }
+}
+
+.test .bgWhite
+{
+    border-radius: 25px;
+}
+
+.pagination
+{
+    margin: 50px auto;
+}
+
+.pagination li .page-link
+{
+    color: var(--black);
+}
+
+.pagination li .page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: none;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: var(--black);
+    background-color: var(--bgpurple);
+    border-color: var(--bgpurple);
+}
+
+.question
+{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.buttons
+{
+    padding-bottom: 50px;
+}
+
+.buttons .btn
+{
+    margin: auto;
+    margin-bottom: 10px;
 }
