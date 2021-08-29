@@ -29,15 +29,16 @@
 
     <div class="container onlineTest">
         <div class="row bgWhite">
+
             <div class="col-12 col-md-7 leftPanel">
                 <img src="./assets/images/online test.jpg" alt="online test image" class="onlineTestImage">
                 <h1 class="text-center p-3">Online Assesment Platform</h1>
                 <h5 class="text-center p-2">Developed with &#10084; by Kashish Ahuja, M Boopathi, and Drashi Jain</h5>
             </div>
-            <div class="col-12 col-md-5 rightPanel">
 
+            <div class="col-12 col-md-5 rightPanel">
                 <div class="center">
-                    <form action="">
+                    <form action="instructions.html" id="login">
                         <label for="user-name">
                             <fieldset class="scheduler-border">
                                 <legend class="scheduler-border">Name</legend>
@@ -48,18 +49,17 @@
                         <label for="user-email">
                             <fieldset class="scheduler-border">
                                 <legend class="scheduler-border">Email</legend>
-                                <input type="text" id="user-email" required>
+                                <input type="email" id="user-email" required>
                             </fieldset>
                         </label>
 
                         <div class="col-12 text-right">
-                            <button type="submit" class="btn btn-default m-0">
-                                <a href="instructions.html" style="color: var(--white);">Proceed</a> </button>
+                            <button type="submit" class="btn btn-default m-0"> Proceed </button>
                         </div>
                     </form>
                 </div>
-
             </div>
+            
         </div>
     </div>
 
@@ -70,6 +70,11 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Validation  -->
+    <script src="assets/js/jquery.validate.min.js"></script>
+
+    <!-- <script src="assets/js/index.js"></script> -->
 
 </body>
 </html>

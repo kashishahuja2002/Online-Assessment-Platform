@@ -340,3 +340,17 @@ legend.scheduler-border{
     width: 40%;
     padding-bottom: 50px;
 }
+
+
+/*Error*/
+.error{
+    color: red;
+    position: absolute;
+    top: 50px;
+  }
+
+
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
