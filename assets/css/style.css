@@ -62,20 +62,47 @@ p {
     background-color: var(--white);
 }
 
-/************* Index  *************/
+.centerHorizontal
+{
+    margin: auto !important;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
 
-.indexContainer
+.centerVertical
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centerBoth
+{
+    margin: auto;
+    width: 80%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/************* Index  *************/
+.onlineTest
 {
     padding: 50px;
 }
 
-.indexContainer .bgWhite
+.onlineTest .bgWhite
 {
     border-radius: 25px;
 }
 
 /* Left Panel  */
-.leftPanel
+.onlineTest .leftPanel
 {
     width: 100%;
     padding: 20px;
@@ -92,12 +119,12 @@ p {
 }
 
 /* Right Panel  */
-.rightPanel
+.onlineTest .rightPanel
 {
     width: 100%;
 }
 
-.rightPanel .center
+.onlineTest .rightPanel .center
 {
     margin: auto;
     width: 80%;
@@ -110,14 +137,14 @@ p {
 
 @media (max-width: 992px)
 {
-    .rightPanel .center {
+    .onlineTest .rightPanel .center {
         width: 90%;
     }
 }
 
 @media (max-width: 768px)
 {
-    .rightPanel .center {
+    .onlineTest .rightPanel .center {
         padding-top: 30px;
         padding-bottom: 50px;
         width: 80%;
@@ -146,16 +173,53 @@ legend.scheduler-border{
     margin-bottom: 0;
 }
 
-.rightPanel label{
+.onlineTest .rightPanel label{
     width: 100%;
 }
 
-.rightPanel input {
+.onlineTest .rightPanel input {
     width: 100%;
     border: none;
     padding-bottom: 5px;
 }
 
-.rightPanel input:focus-visible, .contact .contact-form textarea:focus-visible {
+.onlineTest .rightPanel input:focus-visible, .contact .contact-form textarea:focus-visible {
     outline: none;
+}
+
+/************* Instructions  *************/
+.instructions
+{
+    padding: 50px;
+    padding-top: 120px;
+}
+
+.instructions .bgWhite
+{
+    border-radius: 25px;
+}
+
+/* Left Panel  */
+.instructions .leftPanel
+{
+    width: 100%;
+    padding: 60px;
+    color: var(--black);
+}
+
+/* Rightt Panel  */
+.instructions .rightPanel
+{
+    width: 100%;
+    padding: 20px;
+    color: var(--black);
+}
+
+.instructionsImage
+{
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
