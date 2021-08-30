@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Assesment Platform | Question</title>     
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/6c7c7565ca.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css">
+
+    <!-- Local stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+        <script>
+        function countdown( elementName, minutes, seconds )
+{
+    var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "Time is up!";
+            window.location.href = "result_jsp.jsp";
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+    </script>    
+</head>
+
+<body onload="get(),countdown('ten-countdown',1.66,0)">
+
+
+    <div class="container test">
+        <div class="bgWhite">
+
+           <div id="ten-countdown"></div>
+            <!-- Question -->
+            <div class="row">
+                <div class="card shadow-lg question">
+
+                    <div class="card-header">
+                        <h5 class="col-12 col-md-10" id="question"></h5>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="col-sm-12 col-md-10">
+                            <div class="icheck-primary">
+                                <input type="radio" name="question" id="option1" value="option1"/>
+                                <label for="option1" id="label1"></label>
+                            </div>
+
+                            <div class="icheck-primary">
+                                <input type="radio" name="question" id="option2" value="option2"/>
+                                <label for="option2" id="label2" ></label>
+                            </div>
+
+                            <div class="icheck-primary">
+                                <input type="radio" name="question" id="option3" value="option3"/>
+                                <label for="option3" id="label3" ></label>
+                            </div>
+
+                            <div class="icheck-primary">
+                                <input type="radio" name="question" id="option4" value="option4"/>
+                                <label for="option4" id="label4"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="row buttons">
+                <div class="col-2 nextSubmit">
+                    <button type="button" class="btn btn-default" onclick="next()" id="submit">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container footer mb-4">
+        <h5 class="text-center"> Online Assessment Platform </h5>
+    </div>
+
+    <!-- Javascript files  -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        var ajaxreq;
+        var count=0;
+        function get(){
+            ajaxreq=new XMLHttpRequest();
+             ajaxreq.onreadystatechange=processresponse;
+             ajaxreq.open("GET","GetQuestions?start=0",false);
+             ajaxreq.send(null);
+             count=1;
+         }
+         function processresponse(){
+             if(ajaxreq.readyState==4){
+                 if(count==10){
+                     var submit=document.getElementById("submit");submit.innerHTML='<a href="result_jsp.jsp" style="color: var(--white)"> Submit </a>';
+                 }
+                 var question=document.getElementById("question");
+                 var option1=document.getElementById("label1");
+                 var option2=document.getElementById("label2");
+                 var option3=document.getElementById("label3");
+                 var option4=document.getElementById("label4");
+                 var myArray=ajaxreq.responseText.split(":");
+                 question.innerText=myArray[0];
+                 option1.innerText=myArray[1];
+                 option2.innerText=myArray[2];
+                 option3.innerText=myArray[3];
+                 option4.innerText=myArray[4];
+             }
+         }
+         function next(){
+             count++;
+                 if(count==11){
+                     return;
+                 }
+             ajaxreq=new XMLHttpRequest();
+             ajaxreq.onreadystatechange=processresponse;
+             var radio;
+             if(document.getElementById('option1').checked) {   
+             var selectedValue = document.getElementById('label1').innerText;  
+                radio=selectedValue; 
+             }
+             if(document.getElementById('option2').checked) {  
+             var selectedValue = document.getElementById('label2').innerText;  
+               radio=selectedValue; 
+             }
+             if(document.getElementById('option3').checked) {  
+             var selectedValue = document.getElementById('label3').innerText;  
+                radio=selectedValue;  
+             }
+             if(document.getElementById('option4').checked) {  
+             var selectedValue = document.getElementById('label4').innerText;  
+                radio=selectedValue;  
+             }
+             ajaxreq.open("GET","GetQuestions?question="+radio,true);
+             ajaxreq.send(null);
+             var radList = document.getElementsByName('question');
+                for (var i = 0; i < radList.length; i++) {
+                    if(radList[i].checked) radList[i].checked = false;
+    }
+  }
+    </script>    
+</body>
+</html>

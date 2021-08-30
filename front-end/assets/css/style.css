@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+    background-color: var(--bgpurple);
+    font-family: raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --bgpurple: #F4C4FF;
+    --lightpurple:#A066CB;
+    --white: #ffffff;
+    --black: #3d3d3d;
+}
+
+/************* Starting CSS  **************/
+a, a:visited, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0%;
+}
+
+.btn.btn-default {
+    background-color: var(--lightpurple);
+    color: var(--white);
+}
+
+.btn-link {
+    font-size: 18px;
+    color: #1c1e20;
+    font-weight: 400 !important;
+    border-bottom: 2px solid #333;
+    padding-bottom: 6px !important;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--lightpurple);
+    font-weight: 400 !important;
+    border-bottom: none;
+    padding-bottom: 6px !important;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+.heading {
+    color: var(--lightpurple);
+}
+
+.bgWhite
+{
+    background-color: var(--white);
+}
+
+.centerHorizontal
+{
+    margin: auto !important;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.centerVertical
+{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centerBoth
+{
+    margin: auto;
+    width: 80%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/************* Index  *************/
+.onlineTest
+{
+    padding: 30px;
+}
+
+.onlineTest .bgWhite
+{
+    border-radius: 25px;
+}
+
+/* Left Panel  */
+.onlineTest .leftPanel
+{
+    width: 100%;
+    padding: 20px;
+    color: var(--black);
+}
+
+.onlineTestImage
+{
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* Right Panel  */
+.onlineTest .rightPanel
+{
+    width: 100%;
+}
+
+.onlineTest .rightPanel .center
+{
+    margin: auto;
+    width: 80%;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (max-width: 992px)
+{
+    .onlineTest .rightPanel .center {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .onlineTest .rightPanel .center {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+fieldset.scheduler-border {
+    /* border: 1px groove #0000004d ; */
+    border: 1px groove rgb(134, 134, 134);
+    border-radius: 5px;
+    padding: 0 1.4em 0 1.4em !important;
+    margin: 0 0 .5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border{
+    font-size: 1.2em !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+    /* color: rgb(78, 78, 78); */
+    color: var(--black);
+    margin-bottom: 0;
+}
+
+.onlineTest .rightPanel label{
+    width: 100%;
+}
+
+.onlineTest .rightPanel input {
+    width: 100%;
+    border: none;
+    padding-bottom: 5px;
+}
+
+.onlineTest .rightPanel input:focus-visible, .contact .contact-form textarea:focus-visible {
+    outline: none;
+}
+
+/************* Instructions  *************/
+.instructions
+{
+    padding: 65px;
+}
+
+@media (max-width: 768px)
+{
+    .instructions {
+        padding: 65px 30px;
+    }
+}
+
+.instructions .bgWhite
+{
+    border-radius: 25px;
+}
+
+/* Left Panel  */
+.instructions .leftPanel
+{
+    width: 100%;
+    padding: 60px;
+    color: var(--black);
+}
+
+@media (max-width: 768px)
+{
+    .instructions .leftPanel{
+        padding: 60px 40px;
+    }
+}
+
+/* Rightt Panel  */
+.instructions .rightPanel
+{
+    width: 100%;
+    padding: 20px;
+    color: var(--black);
+}
+
+.instructionsImage
+{
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/************* Test  *************/
+.test
+{
+    padding: 38px;
+}
+
+@media (max-width: 992px)
+{
+    .test {
+        padding: 38px 30px;
+    }
+}
+
+.test .bgWhite
+{
+    border-radius: 25px;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.question
+{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.buttons .nextSubmit
+{
+    margin: auto;
+}
+
+/* Option label  */
+[class*=icheck-]>label 
+{
+    font-size: 18px;
+}
+
+.icheck-primary>input:first-child:checked+input[type=hidden]+label::before, .icheck-primary>input:first-child:checked+label::before {
+    background-color: var(--lightpurple);
+    border-color: var(--lightpurple);
+}
+
+/* Timer */
+#ten-countdown {
+    /* border: 2px solid ; */
+    border-radius: 5px;
+    display:inline;
+    padding: 5px;
+    color: var(--lightPurple);
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 9%;
+}
+
+/************* Result  *************/
+.result
+{
+    padding: 80px;
+}
+
+@media (max-width: 992px)
+{
+    .result {
+        padding: 80px 30px;
+    }
+}
+
+.result .bgWhite
+{
+    border-radius: 25px;
+}
+
+.score
+{
+    margin: auto;
+    padding: 45px 0;
+}
+
+.resultImage
+{
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-bottom: 50px;
+}

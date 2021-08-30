@@ -1,9 +1,16 @@
+<%-- 
+    Document   : result_jsp.jsp
+    Created on : 30-Aug-2021, 05:55:57
+    Author     : m.boopathi
+--%>
+
+<%@page import="myservlet.Marks" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Assesment Platform | Instructions</title>     
+    <title>Online Assesment Platform | Question</title>     
 
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,29 +34,15 @@
 <body>
 
 
-    <div class="container instructions">
-        <div class="row bgWhite">
-            <div class="col-12 col-lg-7 leftPanel">
-                <h3 class="text-center mb-3">Instructions</h3>
-                <ol>
-                    <li>The test comprises of mupltiple type questions (MCQ).</li>
-                    <li>The test consist of 10 questions.</li>
-                    <li>The total time duration for test is 5 minutes.</li>
-                    <li>Once the time is finished, test will be submitted automatically.</li>
-                    <li>All the questions are of 1 mark each and there is no negative marking.</li>
-                    <li>Read the questions carefully.</li>
-                    <li>To start, click the "Start Test" button. When finished, click the "Submit" button.</li>
-                    <li>You'll get the test result at the time of submission.</li>
-                </ol>
-                <div class="text-center">
-                    <h3>All the best</h3>
-                    <a href="test.html" class="btn btn-default m-3">Start Test</a>
-                </div>
+    <div class="container result">
+        <div class="bgWhite">
+
+            <div class="score text-center">
+                <img src="./assets/images/result.png" alt="Result image" class="resultImage">
+                <h2>Result</h2>
+                <h5>You scored <%= Marks.marks%> out of 10 marks.</h5>
             </div>
 
-            <div class="col-12 col-lg-5 rightPanel">
-                <img src="./assets/images/instructions.png" alt="Instructions image" class="instructionsImage centerVertical">
-            </div>
         </div>
     </div>
 

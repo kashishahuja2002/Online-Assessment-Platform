@@ -93,7 +93,7 @@ p {
 /************* Index  *************/
 .onlineTest
 {
-    padding: 50px;
+    padding: 15px;
 }
 
 .onlineTest .bgWhite
@@ -190,13 +190,13 @@ legend.scheduler-border{
 /************* Instructions  *************/
 .instructions
 {
-    padding: 65px;
+    padding: 30px;
 }
 
 @media (max-width: 768px)
 {
     .instructions {
-        padding: 65px 30px;
+        padding: 30px 30px;
     }
 }
 
@@ -240,13 +240,13 @@ legend.scheduler-border{
 /************* Test  *************/
 .test
 {
-    padding: 120px;
+    padding: 38px;
 }
 
 @media (max-width: 992px)
 {
     .test {
-        padding: 120px 30px;
+        padding: 38px 30px;
     }
 }
 
@@ -261,12 +261,12 @@ legend.scheduler-border{
     margin: auto;
     width: 80%;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
-.buttons .btn
+.buttons .nextSubmit
 {
     margin: auto;
-    margin-bottom: 10px;
 }
 
 /* Option label  */
@@ -278,6 +278,20 @@ legend.scheduler-border{
 .icheck-primary>input:first-child:checked+input[type=hidden]+label::before, .icheck-primary>input:first-child:checked+label::before {
     background-color: var(--lightpurple);
     border-color: var(--lightpurple);
+}
+
+/* Timer */
+#ten-countdown {
+    /* border: 2px solid ; */
+    border-radius: 5px;
+    display:inline;
+    padding: 5px;
+    color: var(--lightPurple);
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 9%;
 }
 
 /************* Result  *************/
