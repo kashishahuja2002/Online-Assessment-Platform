@@ -51,6 +51,7 @@ The application is hosted on Elastic Beanstalk environment.
 
 ## Project Setup:
 1. Clone this repository in your local system.
+   
    git clone https://github.com/kunal2899/AssessmentPortal.git
 2. Local system must have JDK and JRE pre-installed in it.
 3. Pre-installed Netbeans or Eclipse with Apache Tomcat-Serveris required.
