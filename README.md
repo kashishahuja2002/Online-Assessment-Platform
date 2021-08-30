@@ -6,12 +6,18 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 
 ## We worked for the following specifications:
 1.Assessment shall be MCQ pattern.✔️
+
 2.There must be a question pool for the assessment.✔️
-  We have created a pool of 15 questions in database and randomly selected 10 questions in shuffled manner
+  We have created a pool of 15 questions in database and randomly selected 10 questions in shuffled order.
+  
 3.The questions displayed in the assessment shall be only from that pool.✔️
+
 4.Number of questions in the pool shall be more than questions displayed.✔️
+
 5.Set a time limit for the assessment (individual timer for a question/optional).✔️ The total time limit is of 100 seconds.
+
 6.Question order shall be shuffled for each candidate appearing.✔️
+
 7.Assessment score shall be generated at the time of submission.✔️
 
 
@@ -27,6 +33,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 3. Drashi Jain [https://github.com/drashijain09]
 
 Frontend + JavaScript Functionality is done by Kashish Ahuja.
+
 Backend + Database is done by M Boopathi.
 
 
