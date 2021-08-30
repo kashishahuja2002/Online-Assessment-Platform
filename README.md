@@ -33,7 +33,6 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 3. Drashi Jain [https://github.com/drashijain09]
 
 Frontend + JavaScript Functionality is done by Kashish Ahuja.
-
 Backend + Database is done by M Boopathi.
 
 
@@ -44,7 +43,7 @@ Backend + Database is done by M Boopathi.
 
 
 ## Deployment:
-For Deployment, we have used Amazon AWS Cloud as a platform.
+For Deployment, we have used Amazon AWS Cloud as a platform. 
 The application is hosted on Elastic Beanstalk environment.
 
 
