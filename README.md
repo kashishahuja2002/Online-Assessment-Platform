@@ -16,6 +16,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 4. Number of questions in the pool shall be more than questions displayed.✔️
 
 5. Set a time limit for the assessment (individual timer for a question/optional).✔️ 
+   
    The total time limit is of 100 seconds.
 
 6. Question order shall be shuffled for each candidate appearing.✔️
