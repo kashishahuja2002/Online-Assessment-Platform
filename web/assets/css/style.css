@@ -190,13 +190,13 @@ legend.scheduler-border{
 /************* Instructions  *************/
 .instructions
 {
-    padding: 30px;
+    padding: 65px;
 }
 
 @media (max-width: 768px)
 {
     .instructions {
-        padding: 30px 30px;
+        padding: 65px 30px;
     }
 }
 
@@ -254,6 +254,7 @@ legend.scheduler-border{
 {
     border-radius: 25px;
     padding: 50px 0px;
+    width: 100%;
 }
 
 .question
@@ -326,4 +327,66 @@ legend.scheduler-border{
     margin-right: auto;
     width: 40%;
     padding-bottom: 50px;
+}
+
+.score .points
+{
+    padding: 30px;
+}
+
+.score span
+{
+    background: var(--lightpurple);
+    color: var(--white);
+    padding: 27px 20px;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.score a:hover
+{
+    color: var(--lightpurple);
+    font-weight: 600;
+}
+
+/************* All Scores  *************/
+.allScores
+{
+    padding: 65px;
+}
+
+@media (max-width: 768px)
+{
+    .allScores {
+        padding: 65px 30px;
+    }
+}
+
+.allScores .bgWhite
+{
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.allScores h2
+{
+    margin-bottom: 15px;
+    color: var(--lightpurple);
+}
+
+table 
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td, th 
+{
+    border: 1px solid #c4c0c0;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
 }
