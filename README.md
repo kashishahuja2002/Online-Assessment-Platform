@@ -1,4 +1,5 @@
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WppfadfvBAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+https://user-images.githubusercontent.com/55057608/131474970-072b891d-c5be-4bb3-a3d3-cebb4cbe71f5.mp4
 
 ## Online Assessment Platform
 This is an online assessment platform made by Kashish Ahuja, M Boopathi, and Drashi Jain as the final project of Walkover University Program.
