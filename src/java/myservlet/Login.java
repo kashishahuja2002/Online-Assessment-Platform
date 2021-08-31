@@ -22,6 +22,8 @@ public class Login extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             String name=request.getParameter("name");
             String emailid=request.getParameter("emailid");
+            UserDetails.name=name;
+            UserDetails.emailid=emailid;
             System.out.println(name);
             System.out.println(emailid);
             String res=Dao.login(name.trim(), emailid.trim());

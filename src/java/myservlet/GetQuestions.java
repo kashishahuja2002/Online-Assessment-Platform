@@ -21,10 +21,10 @@ import java.util.Iterator;
  */
 public class GetQuestions extends HttpServlet {
     public static int count=0;
-    HashSet arrList=null;
-    Iterator<Questions> i=null;
+    public HashSet<Questions> arrList=null;
+    public Iterator<Questions> i=null;
     public static int marks=0;
-    String correctAns="";
+    public static String correctAns="";
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -42,13 +42,7 @@ public class GetQuestions extends HttpServlet {
              Marks.marks=0;
         }
         System.out.println("count----"+count);
-        if(count==10){
-                count=0;
-                Marks.marks=0;
-            }
         String check=request.getParameter("question");
-        System.out.println("temp-----"+correctAns);
-        System.out.println("check-----"+check);
         if(count>0){
             if(correctAns.equals(check)){
                 Marks.marks++;
@@ -62,6 +56,8 @@ public class GetQuestions extends HttpServlet {
                 i = arrList.iterator();
             }
             String result="";
+            System.out.println("correctAns-----"+correctAns);
+            System.out.println("check-----"+check);
             if(count<10){
                 Questions ques=i.next();
                 result+=ques.getQuestion()+":";

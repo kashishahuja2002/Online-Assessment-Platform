@@ -1,9 +1,16 @@
+<%-- 
+    Document   : allScores
+    Created on : 31-Aug-2021, 19:50:14
+    Author     : m.boopathi
+--%>
+
+<%@page import="myservlet.Marks,dao.Dao,myservlet.UserDetails,java.util.*" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Assessment Platform | Result</title>     
+    <title>Online Assessment Platform | All Scores</title>     
 
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,20 +34,27 @@
 <body>
 
 
-    <div class="container result">
-        <div class="bgWhite">
-
-            <div class="score text-center">
-                <img src="./assets/images/result.png" alt="Result image" class="resultImage">
-                <h2>Result</h2>
-                <h5>Hello Name, You scored</h5>
-                <div class="points">
-                    <span>8/10</span>
-                </div>
-                <br>
-                <a href="allScores.html" style="text-decoration: underline;"><p>To view all scores, click here.</p></a>
+    <div class="container allScores">
+        <div class="row bgWhite">
+            <div class="col-12 text-center">
+                <h2>All Scores</h2>
             </div>
-
+            <table>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+                <%
+                    ArrayList<String> arrList=Dao.fetchResults();
+                    int count=1;
+                    for(String s:arrList){
+                        String[] arr=s.split(",");
+                        out.println("<tr><td>"+count+"</td><td>"+arr[0]+"</td><td>"+arr[1]+"</td></tr>");
+                        count++;
+                    }
+                %>    
+            </table>
         </div>
     </div>
 

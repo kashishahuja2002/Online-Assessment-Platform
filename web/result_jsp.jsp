@@ -4,13 +4,14 @@
     Author     : m.boopathi
 --%>
 
-<%@page import="myservlet.Marks" contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="myservlet.GetQuestions"%>
+<%@page import="myservlet.Marks,dao.Dao,myservlet.UserDetails" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Assessment Platform | Question</title>     
+    <title>Result</title>     
 
     <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -40,7 +41,24 @@
             <div class="score text-center">
                 <img src="./assets/images/result.png" alt="Result image" class="resultImage">
                 <h2>Result</h2>
-                <h5>You scored <%= Marks.marks%> out of 10 marks.</h5>
+                <% 
+                if(GetQuestions.count==10){
+                    String check=request.getParameter("question");
+                    System.out.println("correctAns-----"+GetQuestions.correctAns);
+                    System.out.println("check-----"+check);
+                    if(GetQuestions.correctAns.equals(check)){
+                        Marks.marks++;
+                        System.out.println("marks----"+Marks.marks);
+                    }
+                }
+                Dao.saveUserEmailId(UserDetails.name, UserDetails.emailid, Marks.marks); 
+                %>
+                <h5>Hello <%=UserDetails.name%>, You scored</h5>
+                <div class="points">
+                    <span><%= Marks.marks%>/10</span>
+                </div>
+                <br>
+                <a href="allScores.jsp" style="text-decoration: underline;"><p>To view all scores, click here.</p></a>
             </div>
 
         </div>

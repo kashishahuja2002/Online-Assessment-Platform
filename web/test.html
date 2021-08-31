@@ -120,14 +120,15 @@
         function get(){
             ajaxreq=new XMLHttpRequest();
              ajaxreq.onreadystatechange=processresponse;
-             ajaxreq.open("GET","GetQuestions?start=0",false);
+             ajaxreq.open("GET","GetQuestions?start=0",true);
              ajaxreq.send(null);
              count=1;
          }
          function processresponse(){
              if(ajaxreq.readyState==4){
                  if(count==10){
-                     var submit=document.getElementById("submit");submit.innerHTML='<a href="result_jsp.jsp" style="color: var(--white)"> Submit </a>';
+                     var submit=document.getElementById("submit");
+                     submit.innerHTML='<button class="btn btn-default" type="button" onclick="last()">Submit</button>';
                  }
                  var question=document.getElementById("question");
                  var option1=document.getElementById("label1");
@@ -172,6 +173,26 @@
                 for (var i = 0; i < radList.length; i++) {
                     if(radList[i].checked) radList[i].checked = false;
     }
+  }
+  function last(){
+      var radio;
+             if(document.getElementById('option1').checked) {   
+             var selectedValue = document.getElementById('label1').innerText;  
+                radio=selectedValue; 
+             }
+             if(document.getElementById('option2').checked) {  
+             var selectedValue = document.getElementById('label2').innerText;  
+               radio=selectedValue; 
+             }
+             if(document.getElementById('option3').checked) {  
+             var selectedValue = document.getElementById('label3').innerText;  
+                radio=selectedValue;  
+             }
+             if(document.getElementById('option4').checked) {  
+             var selectedValue = document.getElementById('label4').innerText;  
+                radio=selectedValue;  
+             }
+             window.location.href='result_jsp.jsp?question='+radio;
   }
     </script>    
 </body>

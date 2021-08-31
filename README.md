@@ -32,7 +32,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 2. Completely responsive for all devices.
 3. Login page for storing user's data and validation of the data of users attempting for assessment.
 4. Result is displayed with Name entered at the time of login.
-5. User databse table for storing the data and scores of the user.
+5. All users' name and score are displayed at the end using databse table for storing the data and scores of the user.
 
 ## Developers
 1. Kashish Ahuja [https://github.com/kashishahuja2002]

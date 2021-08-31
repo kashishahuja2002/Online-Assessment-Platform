@@ -61,50 +61,7 @@ public class Questions {
         this.correct = correct;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        hash = 29 * hash + Objects.hashCode(this.question);
-        hash = 29 * hash + Objects.hashCode(this.option1);
-        hash = 29 * hash + Objects.hashCode(this.option2);
-        hash = 29 * hash + Objects.hashCode(this.option3);
-        hash = 29 * hash + Objects.hashCode(this.option4);
-        hash = 29 * hash + Objects.hashCode(this.correct);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Questions other = (Questions) obj;
-        if (!Objects.equals(this.question, other.question)) {
-            return false;
-        }
-        if (!Objects.equals(this.option1, other.option1)) {
-            return false;
-        }
-        if (!Objects.equals(this.option2, other.option2)) {
-            return false;
-        }
-        if (!Objects.equals(this.option3, other.option3)) {
-            return false;
-        }
-        if (!Objects.equals(this.option4, other.option4)) {
-            return false;
-        }
-        if (!Objects.equals(this.correct, other.correct)) {
-            return false;
-        }
-        return true;
-    }
+    
 
     public Questions(String question, String option1, String option2, String option3, String option4, String correct) {
         this.question = question;

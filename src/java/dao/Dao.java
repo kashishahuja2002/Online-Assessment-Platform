@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import myservlet.Questions;
 
 public class Dao {
@@ -59,5 +61,34 @@ public class Dao {
         }
      return null;
     }
-     
+     public static void saveUserEmailId(String name,String emailid,int score){
+        try {
+            ps=conn.prepareStatement("insert into login values (?,?,?)");
+            String newName=name.toLowerCase();
+            ps.setString(1,newName);
+            ps.setString(2,emailid);
+            ps.setInt(3,score);
+            boolean rs=ps.execute();
+        } catch (SQLException ex) {
+            Logger.getLogger(Dao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+     }
+     public static ArrayList fetchResults(){
+         try {
+             ArrayList<String> arrList=new ArrayList<>();
+            ps=conn.prepareStatement("Select * from login order by score desc");
+            ResultSet rs=ps.executeQuery();
+            while(rs.next()){
+                String temp=rs.getString(1)+","+rs.getInt(3);
+                arrList.add(temp);
+            }
+            for(String s:arrList){
+                System.out.println(s);
+            }
+            return arrList;
+        } catch (SQLException ex) {
+           ex.printStackTrace();
+        }
+         return null;
+     }
  }
