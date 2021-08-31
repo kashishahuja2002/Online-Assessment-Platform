@@ -29,9 +29,10 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 
 ## Additional Features
 1. Great UI.
-2. Login page for storing user's data and validation of the data of users attempting for assessment.
-3. Result is displayed with Name entered at the time of login.
-4. User databse table for storing the data and scores of the user.
+2. Completely responsive for all devices.
+3. Login page for storing user's data and validation of the data of users attempting for assessment.
+4. Result is displayed with Name entered at the time of login.
+5. User databse table for storing the data and scores of the user.
 
 ## Developers
 1. Kashish Ahuja [https://github.com/kashishahuja2002]
@@ -60,7 +61,7 @@ The application is hosted on Elastic Beanstalk environment.
    
    git clone https://github.com/kashishahuja2002/Online_assessment_platform.git
 2. Local system must have JDK and JRE pre-installed in it.
-3. Pre-installed Netbeans or Eclipse with Apache Tomcat-Serveris required.
+3. Pre-installed Netbeans or Eclipse with Apache Tomcat-Server is required.
 4. Open the cloned repository in Netbeans/Eclipse IDE.
 5. Integrate the .jar files available inside the cloned directory in your project.
 6. Now just RUN the Project.
