@@ -12,7 +12,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 
 2. There must be a question pool for the assessment.✔️
    
-   We have created a pool of 15 questions in database and randomly selected 10 questions in shuffled order.
+ > We have created a pool of 15 questions in database and randomly selected 10 questions in shuffled order.
   
 3. The questions displayed in the assessment shall be only from that pool.✔️
 
