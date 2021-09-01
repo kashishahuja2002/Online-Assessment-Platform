@@ -68,7 +68,7 @@ The application is hosted on Elastic Beanstalk environment.
 7. If everything is done in order then this will open the website in your local machine.
 
 
-## CI/CD
+## CI/CD setup
 1. Create a GitHub repository. You may initialize it with a readme, license, .gitignore
 2. Install git via terminal (On Ubuntu you can do sudo apt-get install git)
 3. Then do a git clone of your repository. Or simply download the zip file of your repository from GitHub and extract it.
