@@ -75,11 +75,12 @@ The application is hosted on Elastic Beanstalk environment.
    (On Ubuntu you can do sudo apt-get install git)
 3. Then do a git clone of your repository, or simply download the zip file of your repository from GitHub and extract it.
 4. Copy your java project in the new folder created after cloning (its name will be same to that of the repository you cloned).
+5. Add all the changes you want.
 6. Then execute these commands:
    
-   git add -A
+   git add .
    
    git commit -m "[mandatory commit message]"
    
-   git push [url to your repository]
+   git push [url to your repository] master/main
 7. Now your commit will be successfully pushed to the main branch of your GitHub repository.
