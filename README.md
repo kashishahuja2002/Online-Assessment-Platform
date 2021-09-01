@@ -12,7 +12,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 
 2. There must be a question pool for the assessment.✔️
    
- > We have created a pool of 15 questions in database and randomly selected 10 questions in shuffled order.
+   `We have created a pool of 15 questions in database and randomly selected 10 questions in shuffled order.`
   
 3. The questions displayed in the assessment shall be only from that pool.✔️
 
@@ -20,7 +20,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 
 5. Set a time limit for the assessment (individual timer for a question/optional).✔️ 
    
-   The total time limit is of 100 seconds.
+   `The total time limit is of 100 seconds.`
 
 6. Question order shall be shuffled for each candidate appearing.✔️
 
@@ -39,27 +39,28 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 2. M Boopathi [https://github.com/Mboopathi1999]
 3. Drashi Jain [https://github.com/drashijain09]
 
-Frontend + JavaScript Functionality is done by Kashish Ahuja.
-
-Backend + Database is done by M Boopathi.
+* `Frontend + JavaScript Functionality` : ***Kashish Ahuja***
+* `Backend + Database` : ***M Boopathi***
 
 
 ## Tech Stack Used:
-1. Frontend: HTML5, CSS3, Javascript, Bootstrap, AJAX
-2. Backend: Java
-3. Database: PostgreSQL
+1. `Frontend` : HTML5, CSS3, Javascript, Bootstrap, AJAX
+2. `Backend` : Java
+3. `Database` : PostgreSQL
 
 
 ## Deployment:
-For Deployment, we have used Amazon AWS Cloud as a platform. 
+For Deployment, we have used `Amazon AWS Cloud` as a platform. 
 
-The application is hosted on Elastic Beanstalk environment.
+The application is hosted on an `Elastic Beanstalk` environment.
 
 
 ## Project Setup:
 1. Clone this repository in your local system.
    
+   ```
    git clone https://github.com/kashishahuja2002/Online_assessment_platform.git
+   ````
 2. Local system must have JDK and JRE pre-installed in it.
 3. Pre-installed Netbeans or Eclipse with Apache Tomcat-Server is required.
 4. Open the cloned repository in Netbeans/Eclipse IDE.
@@ -72,15 +73,16 @@ The application is hosted on Elastic Beanstalk environment.
 1. Create a GitHub repository. You may initialize it with a README, license, .gitignore
 2. Install git via terminal 
 
-   (On Ubuntu you can do sudo apt-get install git)
+   (On Ubuntu you can do `sudo apt-get install git`)
 3. Then do a git clone of your repository, or simply download the zip file of your repository from GitHub and extract it.
 4. Copy your java project in the new folder created after cloning (its name will be same to that of the repository you cloned).
 5. Add all the changes you want.
 6. Then execute these commands:
    
-   git add .
+   ````
+   git add . 
+
+   git commit -m "[mandatory commit message]" 
    
-   git commit -m "[mandatory commit message]"
-   
-   git push [url to your repository] master/main
+   git push [url to your repository] master/main 
 7. Now your commit will be successfully pushed to the main branch of your GitHub repository.
