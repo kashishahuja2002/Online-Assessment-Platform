@@ -2,7 +2,7 @@
 https://user-images.githubusercontent.com/55057608/131543159-b148ba7a-b04c-407b-b1c1-15c063f5c930.mp4
 
 ## Online Assessment Platform
-This is an online assessment platform made by Kashish Ahuja, M Boopathi, and Drashi Jain as the final project of Walkover University Program.
+This is an online assessment platform made by Kashish Ahuja, M Boopathi as the final project of Walkover University Program.
 The web application a robust online testing platform for conducting remote online examinations. The project is made over Java as backend, PostgreSQL as the  database, and HTML, CSS, JS, Boostrap4, and AJAX as frontend.
 
 A deployed version can be checked here: http://onlineassessmentplatform-env.eba-dqmcg8pk.us-east-2.elasticbeanstalk.com/
@@ -37,7 +37,6 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 ## Developers
 1. Kashish Ahuja [https://github.com/kashishahuja2002]
 2. M Boopathi [https://github.com/Mboopathi1999]
-3. Drashi Jain [https://github.com/drashijain09]
 
 * `Frontend + JavaScript Functionality` : ***Kashish Ahuja***
 * `Backend + Database` : ***M Boopathi***
