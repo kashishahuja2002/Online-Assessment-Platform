@@ -7,7 +7,7 @@ The web application a robust online testing platform for conducting remote onlin
 
 A deployed version can be checked here: https://online-assessment-platform.herokuapp.com/
 
-## We worked for the following specifications:
+## We worked for the following specifications
 1. Assessment shall be MCQ pattern.✔️
 
 2. There must be a question pool for the assessment.✔️
@@ -42,17 +42,17 @@ A deployed version can be checked here: https://online-assessment-platform.herok
 * `Backend + Database` : ***M Boopathi***
 
 
-## Tech Stack Used:
+## Tech Stack Used
 1. `Frontend` : HTML5, CSS3, Javascript, Bootstrap, AJAX
 2. `Backend` : Java
 3. `Database` : PostgreSQL
 
 
-## Deployment:
+## Deployment
 For Deployment, we have used `Heroku` as a platform connected with `Heroku Postgres` as database.
 
 
-## Project Setup:
+## Project Setup
 1. Clone this repository in your local system.
    
    ```
