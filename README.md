@@ -5,7 +5,7 @@ https://user-images.githubusercontent.com/55057608/131963901-8229a2ca-b18d-4e32-
 This is an online assessment platform made by Kashish Ahuja and M Boopathi as the final project of Walkover University Program.
 The web application a robust online testing platform for conducting remote online examinations. The project is made over Java as backend, PostgreSQL as the  database, and HTML, CSS, JS, Boostrap4, and AJAX as frontend.
 
-A deployed version can be checked here: http://onlineassessmentplatform-env.eba-zg2y3hrr.us-east-2.elasticbeanstalk.com/
+A deployed version can be checked here: https://online-assessment-platform.herokuapp.com/
 
 ## We worked for the following specifications:
 1. Assessment shall be MCQ pattern.✔️
@@ -49,9 +49,7 @@ A deployed version can be checked here: http://onlineassessmentplatform-env.eba-
 
 
 ## Deployment:
-For Deployment, we have used `Amazon AWS Cloud` as a platform. 
-
-The application is hosted on an `Elastic Beanstalk` environment.
+For Deployment, we have used `Heroku` as a platform connected with `Heroku Postgres` as database.
 
 
 ## Project Setup:
