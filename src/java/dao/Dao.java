@@ -18,8 +18,8 @@ public class Dao {
  {
   try{
       Class.forName("org.postgresql.Driver");
-      conn=DriverManager.getConnection("jdbc:postgresql://ec2-18-209-153-180.compute-1.amazonaws.com:5432/dch2gf0ipap4sd",
-                 "lwqysbtmwwbjer","400d2cdd257e4ccb81c34c87447ca950cfb7c6cf489112f90047907b1fb03869");
+      conn=DriverManager.getConnection("jdbc:postgresql://ec2-3-214-226-101.compute-1.amazonaws.com:5432/d5op0rh8kadv5f",
+                 "pfvkayqgubdjwk","4e8c0a45d825a97f420261daef2ff304df8ab5ac4f1e44e918e2584e9f3f69c9");
       System.out.println("Connection opened successfully");
   }
   catch(ClassNotFoundException | SQLException ex)
