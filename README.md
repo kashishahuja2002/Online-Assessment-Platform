@@ -1,9 +1,12 @@
 
-https://user-images.githubusercontent.com/55057608/131963901-8229a2ca-b18d-4e32-8315-b4eb173b9ef3.mp4
-
 ## Online Assessment Platform
 This is an online assessment platform made by Kashish Ahuja and M Boopathi as the final project of the Walkover University Program.
 The web application is a robust online testing platform for conducting remote online examinations. The project is made over Java as the backend, PostgreSQL as the  database, and HTML, CSS, JS, Boostrap4, and AJAX as front end.
+
+
+## Demo Video
+https://user-images.githubusercontent.com/55057608/131963901-8229a2ca-b18d-4e32-8315-b4eb173b9ef3.mp4
+
 
 ## We worked on the following specifications
 1. Assessment shall be MCQ pattern.✔️
